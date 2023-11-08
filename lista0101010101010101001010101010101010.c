@@ -49,7 +49,25 @@ void q2() {
 	}
 }
 
+void q3() {
+	int num = 0, menor = 0, maior = 0;
+
+	while (num >= 0) {
+		printf("Entre com um numero positivo ou um negativo para encerrar: ");
+		scanf("%d", &num);
+
+		if (num >= 0) {
+			if (num >= maior) maior = num;
+			else if (menor < maior) menor = num;
+		}
+	}
+
+	printf("Dos numero digitados o maior e: %d\nDos numero ditados o menor e: %d", maior, menor);
+
+}
+
 int main() {
 	//q1();
 	//q2();
+	//q3();
 }
